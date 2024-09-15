@@ -19,12 +19,12 @@ To build a CNN based model which can accurately detect melanoma. Melanoma is a t
 
 ## General Information
 - The dataset comprises 2357 images depicting malignant and benign oncological conditions, sourced from the International Skin Imaging Collaboration (ISIC). These images were categorized based on the classification 
-- ![alt text](image-1.png)
+- ![alt text](class_distribution.png)
 - In order to address the challenge of class imbalance, the Augmentor Python package (https://augmentor.readthedocs.io/en/master/) was employed to augment the dataset. This involved generating additional samples for all classes, ensuring that none of the classes had insufficient representation.
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Pictorial representation of skin types
-- ![alt text](image-2.png)
+- ![alt text](model_evaluation.png)
 - The aim of this task is to assign a specific class label to a particular type of skin cancer.
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
@@ -52,10 +52,10 @@ The break down of the final provided CNN architecture step by step:
 10. Training: The model is trained using the fit method with the specified number of epochs (epochs=50). The ModelCheckpoint and EarlyStopping callbacks are employed to monitor the validation accuracy during training. The ModelCheckpoint callback saves the model with the best validation accuracy, while the EarlyStopping callback stops training if the validation accuracy does not improve for a specified number of epochs (patience=5 in this case). These callbacks help prevent overfitting and ensure that the model converges to the best possible solution.
 
 ## Model Summary
-- ![alt text](image-3.png)
+- ![alt text](model_summary.png)
 
 ## Model Evaluation
-- ![alt text](image-4.png)
+- ![alt text](skin_cancer_types.png)
 
 ## Technologies Used
 - Python - version 3
